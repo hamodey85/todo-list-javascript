@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-group-field">
+                <input type="text" id="todo-input" class="input-group-text" placeholder="todo !" title="click here to add"   required>
+            </div>
+            <div class="input-group-append" id="todo-button">
+                <button class="btn btn-icon" type="button" role="button">+</button>
+            </div>
+        </div>
+        <div class="dropdown" id="todo-list">
+            <div class="dropdown_header">
+                <a class="dropdown_btn" href="#" title="click to dropdown the list"> Todo list </a>
+            </div>
+            <div class="dropdown_body">
+                <ul class="dropdown_item_ul" id="todo-list-body">
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown" id="done-list">
+            <div class="dropdown_header">
+                <a class="dropdown_btn" href="#" title="click to dropdown the list">complated </a>
+            </div>
+            <div class="dropdown_body" id="done-Body">
+                <ul class="dropdown_item_ul" id="done-body">
+                </ul>
+            </div>
+        </div>
+        <script src="js.js"></script>
+</body>
+</html>
